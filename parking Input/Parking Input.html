@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Parking Input</title>
+
+  <link rel="stylesheet" href="ParkingInput .css" />
+</head>
+
+<body>
+  <div class="container">
+    <div class="title">Parking Registration</div>
+
+    <form action="#">
+      <br />
+      <div class="user_details">
+        <div class="feild">
+          <label for="fullName">Full Name <span class="star">&#9733;</span></label>
+          <input type="text" id="fullName" placeholder="Enter fullName" required />
+        </div>
+
+        <br />
+
+        <div class="feild">
+          <label for="phoneNumber">Phone Number<span class="star">&#9733;</span></label>
+          <input type="text" id="phoneNumber" placeholder="(+256) _776796152" required />
+        </div>
+
+        <br />
+
+        <div class="feild">
+          <label for="nin">NIN Number<span class="star">&#9733;</span></label>
+          <input type="text" id="nin" placeholder="Enter NIN" required />
+        </div>
+
+        <br />
+
+        <div class="feild">
+          <label for="numbrePlate">Number Plate<span class="star">&#9733;</span></label>
+          <input type="text" id="numbrePlate" placeholder="UAA 123M " required />
+        </div>
+
+        <br />
+
+        <div class="feild">
+          <label for="vehicle">Model Of vehicle/ Type <span class="star">&#9733;</span></label>
+          <select name="vehicle" id="vehicle">
+            <option value="Boda">Boda</option>
+            <option value="Truck">Truck</option>
+            <option value="Personal car">Personal car(below 5 seats)</option>
+            <option value="Taxi">Taxi(below 14 seats)</option>
+            <option value="Coaster">Coaster(above 14 seats)</option>
+          </select>
+        </div>
+
+        <br />
+
+        <div class="feild">
+          <label for="color">Color Of Vehicle</label>
+          <input type="color" id="color" required />
+        </div>
+
+        <br />
+
+        <div class="feild">
+          <label for="parkingSlot">Assign Parking Slot<span class="star">&#9733;</span></label>
+          <input type="text" id="parkingSlot" required />
+        </div>
+      </div>
+
+      <div>
+        <button type="submit">Check In</button>
+      </div>
+    </form>
+  </div>
+</body>
+
+</html>

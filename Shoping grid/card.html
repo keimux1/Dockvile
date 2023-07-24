@@ -1,0 +1,522 @@
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: 'Poppins', sans-serif;
+    background-color: rgba(219, 194, 243, 1);
+  }
+
+  .brand{
+    font-size: 16px;
+    font-weight: 700;
+  }
+
+  .description{
+    font-size: 14px;
+    font-weight: 400;
+    color: #5e5d5d;
+    width: 180px;
+    height: 32px;
+  }
+
+  .price{
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  .rem-no,.rem{
+    font-size: 10px;
+    font-weight: 700;
+    color: #868484;
+  }
+
+  .product-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    gap: 16px 16px;
+    margin: 16px;
+    max-width: 740px;
+    padding: 8px;
+    background-color: #ff0101;
+  }
+
+  .card{
+    background-color: rgba(197, 185, 206, 1);
+    border-radius: 8px;
+  }
+
+  .brand-pic{
+    width: 100%;
+  }
+
+  .card .card-des{
+    padding: 8px ;
+    column-gap: 8px;
+  }
+  
+  .product-description{
+    margin-bottom: 8px;
+  }
+
+
+ .card-inter{
+  display: flex;
+  column-gap: 16px;
+  justify-self: end;
+  align-items: end;
+ }
+
+ .card-inter .card-rem {
+  display: flex;
+  flex-direction: column;
+  row-gap: 4px;
+ }
+
+ .card-inter .card-rem .card-rem-text{
+  display: flex;
+  column-gap: 2px;
+ }
+
+  .prog-out{width: 80px; height: 5px; border: 1px solid black; border-radius:4px;}
+  .prog-in{height: 100%; width: 50%; background-color: #8208F3; border-radius:4px;}
+
+  button{
+    cursor: pointer;
+    background-color: #8208F3;
+    color: white;
+    border: none;
+    height: 36px;
+    width: 100px;
+    border-radius: 8px;
+    font-size: 12px;
+    white-space: nowrap;
+    font-weight: bold;
+    padding: 8px 8px;
+    transition: opacity 0.2s linear, color 0.2s linear,box-shadow 0.2s;
+  }
+
+  button:hover{
+    box-shadow:2px 2px 5px rgba(71, 2, 136, 0.8);
+    opacity: 0.7;
+  }
+
+  
+  button:active{
+    color: #e8e7e7;
+    opacity: 0.3;}
+</style>
+
+<div class="product-grid">
+
+  <div class="card">
+    <div class="product-img">
+      <img class="brand-pic" src="tire.png" alt="yire" />
+    </div>
+  
+    <div class="card-des">
+      <div class="product-name">
+        <p class="brand">Dunlop</p>
+      </div>
+    
+      <div class="product-description">
+        <p class="description">
+          tubless,20 inch,all wether,225mm wide,...
+          <!-- Aspect Ratios – P225,Speed Rating –P225 -->
+        </p>
+      </div>
+    
+      <div class="product-price">
+        <p class="price">100,000</p>
+      </div>
+    
+      <div class="card-inter">
+        <div class="card-rem">
+          <div class="card-rem-progress">
+            <div class="prog-out">
+              <div class="prog-In"></div>
+          </div>
+          
+          </div>
+    
+          <div class="card-rem-text">
+            <p class="rem-no">30</p>
+            <p class="rem">Remaining</p>
+          </div>
+        </div>
+    
+        <div class="add-button">
+          <button>Add to Chart</button>
+        </div>
+    
+      </div>
+    </div>
+  
+  </div>
+
+  <div class="card">
+    <div class="product-img">
+      <img class="brand-pic" src="tire.png" alt="yire" />
+    </div>
+  
+    <div class="card-des">
+      <div class="product-name">
+        <p class="brand">Dunlop</p>
+      </div>
+    
+      <div class="product-description">
+        <p class="description">
+          tubless,20 inch,all wether,225mm wide,...
+          <!-- Aspect Ratios – P225,Speed Rating –P225 -->
+        </p>
+      </div>
+    
+      <div class="product-price">
+        <p class="price">100,000</p>
+      </div>
+    
+      <div class="card-inter">
+        <div class="card-rem">
+          <div class="card-rem-progress">
+            <div class="prog-out">
+              <div class="prog-In"></div>
+          </div>
+          
+          </div>
+    
+          <div class="card-rem-text">
+            <p class="rem-no">30</p>
+            <p class="rem">Remaining</p>
+          </div>
+        </div>
+    
+        <div class="add-button">
+          <button>Add to Chart</button>
+        </div>
+    
+      </div>
+    </div>
+  
+  </div>
+
+  <div class="card">
+    <div class="product-img">
+      <img class="brand-pic" src="tire.png" alt="yire" />
+    </div>
+  
+    <div class="card-des">
+      <div class="product-name">
+        <p class="brand">Dunlop</p>
+      </div>
+    
+      <div class="product-description">
+        <p class="description">
+          tubless,20 inch,all wether,225mm wide,...
+          <!-- Aspect Ratios – P225,Speed Rating –P225 -->
+        </p>
+      </div>
+    
+      <div class="product-price">
+        <p class="price">100,000</p>
+      </div>
+    
+      <div class="card-inter">
+        <div class="card-rem">
+          <div class="card-rem-progress">
+            <div class="prog-out">
+              <div class="prog-In"></div>
+          </div>
+          
+          </div>
+    
+          <div class="card-rem-text">
+            <p class="rem-no">30</p>
+            <p class="rem">Remaining</p>
+          </div>
+        </div>
+    
+        <div class="add-button">
+          <button>Add to Chart</button>
+        </div>
+    
+      </div>
+    </div>
+  
+  </div>
+
+  <div class="card">
+    <div class="product-img">
+      <img class="brand-pic" src="tire.png" alt="yire" />
+    </div>
+  
+    <div class="card-des">
+      <div class="product-name">
+        <p class="brand">Dunlop</p>
+      </div>
+    
+      <div class="product-description">
+        <p class="description">
+          tubless,20 inch,all wether,225mm wide,...
+          <!-- Aspect Ratios – P225,Speed Rating –P225 -->
+        </p>
+      </div>
+    
+      <div class="product-price">
+        <p class="price">100,000</p>
+      </div>
+    
+      <div class="card-inter">
+        <div class="card-rem">
+          <div class="card-rem-progress">
+            <div class="prog-out">
+              <div class="prog-In"></div>
+          </div>
+          
+          </div>
+    
+          <div class="card-rem-text">
+            <p class="rem-no">30</p>
+            <p class="rem">Remaining</p>
+          </div>
+        </div>
+    
+        <div class="add-button">
+          <button>Add to Chart</button>
+        </div>
+    
+      </div>
+    </div>
+  
+  </div>
+
+  <div class="card">
+    <div class="product-img">
+      <img class="brand-pic" src="tire.png" alt="yire" />
+    </div>
+  
+    <div class="card-des">
+      <div class="product-name">
+        <p class="brand">Dunlop</p>
+      </div>
+    
+      <div class="product-description">
+        <p class="description">
+          tubless,20 inch,all wether,225mm wide,...
+          <!-- Aspect Ratios – P225,Speed Rating –P225 -->
+        </p>
+      </div>
+    
+      <div class="product-price">
+        <p class="price">100,000</p>
+      </div>
+    
+      <div class="card-inter">
+        <div class="card-rem">
+          <div class="card-rem-progress">
+            <div class="prog-out">
+              <div class="prog-In"></div>
+          </div>
+          
+          </div>
+    
+          <div class="card-rem-text">
+            <p class="rem-no">30</p>
+            <p class="rem">Remaining</p>
+          </div>
+        </div>
+    
+        <div class="add-button">
+          <button>Add to Chart</button>
+        </div>
+    
+      </div>
+    </div>
+  
+  </div>
+
+  <div class="card">
+    <div class="product-img">
+      <img class="brand-pic" src="tire.png" alt="yire" />
+    </div>
+  
+    <div class="card-des">
+      <div class="product-name">
+        <p class="brand">Dunlop</p>
+      </div>
+    
+      <div class="product-description">
+        <p class="description">
+          tubless,20 inch,all wether,225mm wide,...
+          <!-- Aspect Ratios – P225,Speed Rating –P225 -->
+        </p>
+      </div>
+    
+      <div class="product-price">
+        <p class="price">100,000</p>
+      </div>
+    
+      <div class="card-inter">
+        <div class="card-rem">
+          <div class="card-rem-progress">
+            <div class="prog-out">
+              <div class="prog-In"></div>
+          </div>
+          
+          </div>
+    
+          <div class="card-rem-text">
+            <p class="rem-no">30</p>
+            <p class="rem">Remaining</p>
+          </div>
+        </div>
+    
+        <div class="add-button">
+          <button>Add to Chart</button>
+        </div>
+    
+      </div>
+    </div>
+  
+  </div>
+
+  <div class="card">
+    <div class="product-img">
+      <img class="brand-pic" src="tire.png" alt="yire" />
+    </div>
+  
+    <div class="card-des">
+      <div class="product-name">
+        <p class="brand">Dunlop</p>
+      </div>
+    
+      <div class="product-description">
+        <p class="description">
+          tubless,20 inch,all wether,225mm wide,...
+          <!-- Aspect Ratios – P225,Speed Rating –P225 -->
+        </p>
+      </div>
+    
+      <div class="product-price">
+        <p class="price">100,000</p>
+      </div>
+    
+      <div class="card-inter">
+        <div class="card-rem">
+          <div class="card-rem-progress">
+            <div class="prog-out">
+              <div class="prog-In"></div>
+          </div>
+          
+          </div>
+    
+          <div class="card-rem-text">
+            <p class="rem-no">30</p>
+            <p class="rem">Remaining</p>
+          </div>
+        </div>
+    
+        <div class="add-button">
+          <button>Add to Chart</button>
+        </div>
+    
+      </div>
+    </div>
+  
+  </div>
+
+  <div class="card">
+    <div class="product-img">
+      <img class="brand-pic" src="tire.png" alt="yire" />
+    </div>
+  
+    <div class="card-des">
+      <div class="product-name">
+        <p class="brand">Dunlop</p>
+      </div>
+    
+      <div class="product-description">
+        <p class="description">
+          tubless,20 inch,all wether,225mm wide,...
+          <!-- Aspect Ratios – P225,Speed Rating –P225 -->
+        </p>
+      </div>
+    
+      <div class="product-price">
+        <p class="price">100,000</p>
+      </div>
+    
+      <div class="card-inter">
+        <div class="card-rem">
+          <div class="card-rem-progress">
+            <div class="prog-out">
+              <div class="prog-In"></div>
+          </div>
+          
+          </div>
+    
+          <div class="card-rem-text">
+            <p class="rem-no">30</p>
+            <p class="rem">Remaining</p>
+          </div>
+        </div>
+    
+        <div class="add-button">
+          <button>Add to Chart</button>
+        </div>
+    
+      </div>
+    </div>
+  
+  </div>
+
+  <div class="card">
+    <div class="product-img">
+      <img class="brand-pic" src="tire.png" alt="yire" />
+    </div>
+  
+    <div class="card-des">
+      <div class="product-name">
+        <p class="brand">Dunlop</p>
+      </div>
+    
+      <div class="product-description">
+        <p class="description">
+          tubless,20 inch,all wether,225mm wide,...
+          <!-- Aspect Ratios – P225,Speed Rating –P225 -->
+        </p>
+      </div>
+    
+      <div class="product-price">
+        <p class="price">100,000</p>
+      </div>
+    
+      <div class="card-inter">
+        <div class="card-rem">
+          <div class="card-rem-progress">
+            <div class="prog-out">
+              <div class="prog-In"></div>
+          </div>
+          
+          </div>
+    
+          <div class="card-rem-text">
+            <p class="rem-no">30</p>
+            <p class="rem">Remaining</p>
+          </div>
+        </div>
+    
+        <div class="add-button">
+          <button>Add to Chart</button>
+        </div>
+    
+      </div>
+    </div>
+  
+  </div>
+
+
+</div>
